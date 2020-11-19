@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  &,
+  button,
+  input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+  }
+  button:not(.rdrDay):not(.rdrNextPrevButton) {
+    background-color: #3a80ba;
+    color: white;
+    border-radius: 0.556vw;
+    border: none;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+    transition: box-shadow 0.3s linear;
+    font-size: 1.11vw;
+    white-space: nowrap;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.46);
+    }
+    @media (max-width: 700px) {
+      font-size: 10px;
+      border-radius: 2px;
+    }
+  }
+  button:focus,
+  input:focus {
+    outline: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    line-height: 142%;
+  }
+  @media (max-width: 450px) {
+    .swal2-container,
+    .swal2-popup,
+    .swal2-content {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    .rdrCalendarWrapper.rdrDateRangeWrapper * {
+      font-size: 10px;
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+      select {
+        padding-right: 20px !important;
+      }
+    }
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
